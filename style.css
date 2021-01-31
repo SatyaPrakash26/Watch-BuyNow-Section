@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('images/blue.svg') -290px 300px no-repeat;
+    opacity: 0;
+    transition: all 0.6s;
+    animation :fadeleft .5s forwards;
+    animation-delay: 0.3s;
+    overflow:hidden;
+}
+
+.content{
+    width: 80%;
+    height: 70%;
+    margin: 4rem ;
+    margin-left:20rem ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background: url("images/circle-large.png") 1100px 420px no-repeat;
+    background-size: 10rem 10rem;
+    
+}
+
+#clock{
+    width: 30rem;
+    margin: 170px;
+    margin-left: 30px;
+    font-size: 35px;
+    position: absolute;
+    color: white;
+    opacity:0;
+    z-index:1500;
+    animation: fadeleft .5s forwards;
+    display: none;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+}
+#date{
+    display: none;
+    position: absolute;
+    width: 400px;
+    margin: 170px;
+    margin-left: -50px;
+    font-size: 19px;
+    position: absolute;
+    color: white;
+    animation: fadeleft .5s forwards;
+    z-index:1500;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.images{
+    padding-left: 0rem;
+    width: 30rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+    animation: scale .5s forwards;
+    animation-delay: .5s;
+}
+.images img{
+    margin: 5rem 5rem;
+    height: 440px;
+    animation: up 3s infinite ;
+    padding-left: 2rem;
+}
+
+#black{
+    display: block;
+}
+.information{
+    max-width: 1000rem;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.para{
+    width: 400px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 8rem;
+    color:#BDBFBF;
+    opacity: 0;
+    animation: fadedown .5s forwards;
+    animation-delay: 1s;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 2.6rem;
+    color:#565681;
+    opacity: 0;
+    animation: fadeup .5s forwards;
+    animation-delay: .9s;
+    font-family: 'Dancing Script', cursive;
+}
+.select-color{
+    margin-left: 210px;
+    opacity: 0;
+    animation: fadeleft .5s forwards;
+    animation-delay: .9s;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+.information .button1{
+    margin-left:70px;
+}
+.information .button1 a{
+    width: 500px;
+    margin-left: 3px;
+    padding:8px 30px;
+    text-decoration: none;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    opacity: 0;
+    animation: scale .5s forwards;
+    animation-delay: 1.3s;
+}
+.information .button1 #white{
+    transition: none !important;
+    padding: 0;
+}
+.features{
+    margin-left: 260px;
+    opacity: 0;
+    animation: fadeleft .5s forwards;
+    animation-delay: .9s;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+
+.information .button2 button{
+    
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #565681;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    animation: scale .5s forwards;
+    animation-delay: 1.3s;
+}
+.information .button2  #btn1{
+    margin-left: 220px;
+}
+.information .button3 button{
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    animation: scale .5s forwards;
+    animation-delay: 1.7s;
+}
+ #btn3{
+    margin-left: 270px;
+}
+#btn1,#btn2,#btn3{
+    background-color: #565681;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (min-width:910px )and (max-width:1320px){
+    body{
+        background: url("images/blue.svg")-50px 350px no-repeat;
+        background-color:#FFFFFF;
+        overflow:hidden;
+    }
+    .content{
+        margin: 0 auto!important;
+        height: 700px !important;
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background: none!important;
+    }
+    .images{
+        
+        width: 30rem;
+        margin-top: -7rem;
+        padding-top: -30px;
+    }
+    .images img{
+        
+        margin-left:3rem;
+        height: 25rem;
+        padding-left: 0rem !important;
+        z-index: 1300;
+    }
+    .information{
+    
+        margin-top: -7rem;
+        margin-left: 0;
+        width: 35rem;
+    }
+    .information .heading{
+        font-size: 2rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .information .para{
+        font-size: 1.3rem;
+        margin:1rem 1rem;
+        margin-left: 5rem;
+        text-align: center;
+    }
+    .information .select-color{
+        font-size: 1.2rem;
+        margin-left: 14rem;
+    }
+    .information .button1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -3rem;
+    }
+    .information .button1 a{
+        width: 2rem;
+        padding: 0.2rem;
+        border: 2px solid transparent;
+        border-radius: 50%;
+    }
+    .information .button2{
+        margin-left: -3rem;
+        cursor: pointer;
+    }
+    .information .features{
+        font-size: 1.2rem;
+        margin-left: 15rem;
+    }
+    .information .button3{
+        margin-left: -2rem;
+        margin-bottom: 1rem;
+        
+    }
+    .button2,.button3{
+        cursor: pointer;
+    }
+    #clock,#date{
+        display: block;
+        top:120px !important;
+        left: 190px !important;
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Maven Pro', sans-serif;
+    }
+    #date{
+        font-size:1.2rem;
+        top:120px !important;
+        left: 262px !important;
+        color:white;
+    }
+
+
+}
+
+@media screen and (max-width:900px){
+    body{
+        background: url("images/blue.svg") 207px 300px no-repeat;
+        background-color:#FFFFFF;
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .content{
+        margin: 0 3rem;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .images{
+        width: 30rem;
+        margin-top: -6rem;
+    }
+    .images img{
+        margin-left:3rem;
+        height: 20rem;
+        padding-left: 0rem !important;
+        z-index: 1300;
+        animation: none ;
+    }
+    .information{
+        margin-top: -8rem;
+        margin-left: 0;
+        width: 30rem;
+    }
+    .information .heading{
+        font-size: 1.4rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .information .para{
+        font-size: 1rem;
+        margin:0 1rem;
+        text-align: center;
+        margin-top:-5rem;
+    }
+    .information .select-color{
+        font-size: 1.2rem;
+        margin-left: 9.4rem;
+        margin-top: -6rem;
+    }
+    .information .button1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5rem;
+        margin-top: -2rem;
+    }
+    .information .button1 a{
+        width: 2rem;
+        padding: 0.2rem;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        margin-top: -5rem;
+    }
+    .information .button2{
+        margin-left: -7rem;
+        cursor: pointer;
+        margin-top: -5rem;
+    }
+    .information .features{
+        font-size: 1.2rem;
+        margin-left: 11rem;
+        margin-top: -8rem;
+    }
+    .information .button3{
+        margin-left: -6rem;
+        margin-bottom: 1rem;
+        margin-top: -6rem;
+        
+    }
+    .button2,.button3{
+        cursor: pointer;
+    }
+    #clock,#date{
+        display: block;
+        top:-40px! important;
+        left: 169px! important;
+        font-size: 1.6rem;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Maven Pro', sans-serif;
+    }
+    #date{
+        top:-40px !important;
+        font-size:0.9rem !important;
+        left: 250px !important;
+        color:white;
+    }
+
+}
+
+@keyframes fadeup{
+    0%{
+        transform:translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes scale{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadedown{
+    0%{
+        transform:translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeleft{
+    0%{
+        transform:translateX(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes up{
+    0%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(4rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes up1{
+    0%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(2rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+
