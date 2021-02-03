@@ -11,5 +11,9 @@
 
 ![features-details](https://user-images.githubusercontent.com/68632303/106708379-c8db5e00-6618-11eb-9906-da4601b6f843.gif)
 
+## MObile View 📱:
+
+![features-details-mobile-view](https://user-images.githubusercontent.com/68632303/106709320-50759c80-661a-11eb-9307-57c198a53da8.gif)
+
 
 
